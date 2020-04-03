@@ -1,0 +1,36 @@
+#movies {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: red;
+}
+
+.card {
+  margin: 1rem;
+  border: 2px solid gray;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(50% - 2rem);
+            flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(33% - 2rem);
+            flex: 1 1 calc(33% - 2rem);
+  }
+}
+/*# sourceMappingURL=style.css.map */
